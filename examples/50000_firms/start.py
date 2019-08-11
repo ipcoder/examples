@@ -6,8 +6,8 @@ from abcEconomics import Simulation
 def main():
     s = Simulation(processes=1)
 
-    myagents = s.build_agents(MyAgent, 'myagent', 50000)
-    youragents = s.build_agents(YourAgent, 'youragent', 50000)
+    myagents = s.build_agents(MyAgent, 'myagent', 500000)
+    youragents = s.build_agents(YourAgent, 'youragent', 500000)
 
     for r in range(100):
         print('Round: %i' % r)

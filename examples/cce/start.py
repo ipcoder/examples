@@ -2,7 +2,7 @@ from firm import Firm
 from household import Household
 from netexport import NetExport
 from government import Government
-from abcEconomics import Simulation, gui
+from abcEconomics import Simulation, gui, declare_service
 from collections import OrderedDict, defaultdict
 from sam_to_functions import Sam
 import iotable
@@ -87,7 +87,7 @@ def main(simulation_parameters):
 
     simulation = Simulation(trade_logging='group', processes=1)
 
-    simulation.declare_service('endowment_FFcap', 1, 'cap')
+    declare_service('endowment_FFcap', 1, 'cap')
     simulation.declare_service('endowment_FFlab', 1, 'lab')
     """ every round for every endowment_FFcap the owner gets one good of lab
     similar for cap"""

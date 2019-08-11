@@ -11,4 +11,5 @@ docs/_build/
 docs/builddir/
 **__pycache__*
 *.db
-
+**/abce.readthedocs.io/*
+**/.ipynb_checkpoints/*
